@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    text-align: center;
+}
+nav>ul>li{
+    display: inline-block;
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 25px;
+    padding: 15px 20px;
+}
+.active{
+    background-color: darkred;
+}
+body{
+    background-color: black;
+}
+.page1>h2{
+    padding: 50px 0;
+    text-align: center;
+    color: goldenrod;
+    background-color: darkred;
+    font-size: 30px;
+}
+.page1>nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1060px;
+    height: 400px;
+}
+.page1>nav>section{
+    margin: 50px 11px 0 11px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+}
+.page1>nav>section>img{
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+.page1>nav>section>img:hover{
+    transform: scale(1.2);
+}
+.page1>nav>section:hover>article{
+    width: 250px;
+    height: 175px;
+    background-color: darkblue;
+    transform: scale(1.5);
+}
