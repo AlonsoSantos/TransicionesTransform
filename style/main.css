@@ -33,7 +33,7 @@ body{
 }
 .page1>nav{
     position: absolute;
-    top: 0;
+    top: 200px;
     right: 0;
     left: 0;
     bottom: 0;
@@ -53,12 +53,21 @@ body{
     transition-duration: .5s;
     transition-delay: 0s;
 }
-.page1>nav>section>img:hover{
+.page1>nav>section:hover>img{
     transform: scale(1.2);
 }
+.page1>nav>section>article{
+    position: absolute;
+    top: 50px;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    background-color: rgba(180, 4, 4, .3);
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
 .page1>nav>section:hover>article{
-    width: 250px;
-    height: 175px;
-    background-color: darkblue;
-    transform: scale(1.5);
+    transform: scale(1);
 }
