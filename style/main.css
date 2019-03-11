@@ -24,25 +24,16 @@ nav>ul>li>a{
 body{
     background-color: black;
 }
-.page1>h2{
+h2{
     padding: 50px 0;
     text-align: center;
     color: goldenrod;
     background-color: darkred;
     font-size: 30px;
 }
-.page1>nav{
-    position: absolute;
-    top: 200px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    width: 1060px;
-    height: 400px;
-}
 .page1>nav>section{
-    margin: 50px 11px 0 11px;
+    position: relative;
+    margin: 0 11px;
     width: 500px;
     height: 350px;
     display: inline-block;
@@ -58,7 +49,7 @@ body{
 }
 .page1>nav>section>article{
     position: absolute;
-    top: 50px;
+    top: 0;
     margin: auto;
     width: 500px;
     height: 350px;
@@ -70,4 +61,188 @@ body{
 }
 .page1>nav>section:hover>article{
     transform: scale(1);
+}
+.page1>nav>section>article>h4{
+    font-size: 30px;
+    color: transparent;
+    text-align: center;
+    margin-top: 50px;
+    transform: translateY(-100px);
+    transition-property: all .5 linear;
+    transition-delay: .5s;
+}
+.page1>nav>section>article>p{
+    font-size: 20px;
+    color: transparent;
+    text-align: justify;
+    margin: 40px 30px;
+    transform: translateY(100px);
+    transition-property: all .5 linear;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page1>nav>section>article>a{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: transparent;
+    color: transparent;
+    text-decoration: none;
+    margin: auto;
+    display: inline-block;
+    transition-property: background-color,color;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page1>nav>section>article:hover>h4{
+    transform: translateY(0);
+    color: white;
+}
+.page1>nav>section>article:hover>p{
+    transform: translateY(0);
+    color: white;
+}
+.page1>nav>section>article:hover>a{
+    background-color: black;
+    color: white;
+}
+.page2>nav, .page1>nav{
+    padding: 100px 0;
+    margin: auto;
+    width: fit-content;
+    overflow: hidden;
+}
+.page2>nav>section{
+    position: relative;
+    margin: 0 11px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.page2>nav>section>article{
+    position: absolute;
+    background-color: rgba(180, 4, 4, .3);
+    top: 0;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    transform: rotate(90deg) translateX(425px) translateY(-425px);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+    overflow: hidden;
+}
+.page2>nav>section>article>h4{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    transform: translate(300px,-100px);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page2>nav>section>article>p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin: 40px 30px;
+    transform: translate(-300px,300px);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page2>nav>section>article>a{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: transparent;
+    color: transparent;
+    text-decoration: none;
+    margin: auto;
+    display: inline-block;
+    transform: translateY(100px);
+    transition-property: transform, color, background-color;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page2>nav>section:hover>article{
+    transform: rotate(0) translate(0,0);
+}
+.page2>nav>section:hover>article>h4{
+    transform: translate(0,0);
+}
+.page2>nav>section:hover>article>p{
+    transform: translate(0,0);
+}
+.page2>nav>section:hover>article>a{
+    transform: translateY(0);
+    color: white;
+    background-color: black;
+}
+.page3>nav{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1060px;
+    height: 350px;
+    overflow: hidden;
+}
+.page3>nav>section{
+    margin: 0 11px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.page3>nav>section>article{
+    background-color: rgba(180, 4, 4, .3);
+    top: 0;
+    margin: auto;
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    transform: translateY(-425px) translateX(70px) rotate(90deg);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+.page3>nav>section>img{
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+.page3>nav>section>article>h4{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.page3>nav>section>article>p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin: 40px 30px;
+}
+.page3>nav>section>article>a{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    display: inline-block;
+}
+.page3>nav>section:hover>img{
+    transform: scale(1.35) rotate(-15deg);
+}
+.page3>nav>section:hover>article{
+    transform: translateY(0) translateX(0) rotate(0);
 }
