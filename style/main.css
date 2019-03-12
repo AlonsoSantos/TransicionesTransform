@@ -8,18 +8,36 @@ nav{
     text-align: center;
 }
 nav>ul>li{
-    display: inline-block;
     list-style: none;
+    display: inline-block;
 }
-nav>ul>li>a{
+nav>ul>li>div{
+    background-color: transparent;
+    text-align: center;
+    padding: 20px 10px;
+    display: inline-block;
+    transition: all .3s linear;
+}
+nav>ul>li>div:hover{
+    background-color: #424242;
+}
+nav>ul>li>div>a{
     text-decoration: none;
     color: white;
-    display: inline-block;
+    border: solid transparent;
     font-size: 25px;
-    padding: 15px 20px;
+    padding: 5px 10px;
+    transition: all .3s linear;
+}
+nav>ul>li>div:hover>a{
+    border: solid 2px white;
 }
 .active{
-    background-color: darkred;
+    border: solid 2px white;
+    background-color: #424242;
+}
+.fondo{
+    background-color: #424242;
 }
 body{
     background-color: black;
@@ -209,6 +227,7 @@ h2{
     transition-property: transform;
     transition-duration: .5s;
     transition-delay: 0s;
+    overflow: hidden;
 }
 .page3>nav>section>img{
     transition-property: transform;
@@ -220,26 +239,308 @@ h2{
     font-size: 30px;
     text-align: center;
     margin-top: 50px;
+    transform: translate(-200px, -200px) rotate(-90deg);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: .5s;
 }
 .page3>nav>section>article>p{
     color: white;
     font-size: 20px;
     text-align: justify;
     margin: 40px 30px;
+    transform: translate(300px, -300px) rotate(90deg);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: .5s;
 }
 .page3>nav>section>article>a{
     font-size: 20px;
     text-align: center;
     padding: 20px 15px;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: transparent;
     text-decoration: none;
     margin: auto;
     display: inline-block;
+    transform: translateY(-100px);
+    transition-property: transform, color, background-color;
+    transition-duration: .5s;
+    transition-delay: .5s;
 }
 .page3>nav>section:hover>img{
     transform: scale(1.35) rotate(-15deg);
 }
 .page3>nav>section:hover>article{
     transform: translateY(0) translateX(0) rotate(0);
+}
+.page3>nav>section:hover>article>h4{
+    transform: translate(0) rotate(0);
+}
+.page3>nav>section:hover>article>p{
+    transform: translate(0) rotate(0);
+}
+.page3>nav>section:hover>article>a{
+    transform: translate(0);
+    color: white;
+    background-color: black;
+}
+.page4>nav{
+    padding: 100px 0;
+    margin: auto;
+    width: fit-content;
+    overflow: hidden;
+}
+.page4>nav>section{
+    position: relative;
+    margin: 0 11px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.page4>nav>section>article{
+    position: absolute;
+    background-color: rgba(180, 4, 4, .3);
+    top: 0;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    transform: rotate(720deg) scale(0);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+    overflow: hidden;
+}
+.page4>nav>section>img{
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+.page4>nav>section>article>h4{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    transform: translateX(-400px);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page4>nav>section>article>p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin: 40px 30px;
+    transform: translateX(500px);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page4>nav>section>article>a{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: transparent;
+    color: transparent;
+    text-decoration: none;
+    margin: auto;
+    display: inline-block;
+    transform: translateY(200px);
+    transition-property: transform, color, background-color;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page4>nav>section:hover>img{
+    transform: scale(1.5);
+}
+.page4>nav>section:hover>article{
+    transform: rotate(0) scale(1);
+}
+.page4>nav>section:hover>article>h4{
+    transform: translate(0) rotate(0);
+}
+.page4>nav>section:hover>article>p{
+    transform: translate(0) rotate(0);
+}
+.page4>nav>section:hover>article>a{
+    transform: translate(0);
+    color: white;
+    background-color: black;
+}
+.page5>nav{
+    padding: 100px 0;
+    margin: auto;
+    width: fit-content;
+    overflow: hidden;
+}
+.page5>nav>section{
+    position: relative;
+    margin: 0 11px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.page5>nav>section>article{
+    position: absolute;
+    background-color: rgba(180, 4, 4, .3);
+    top: 0;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    transform: translate(-500px, 350px);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+    overflow: hidden;
+}
+.page5>nav>section>article>h4{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    transform: scale(0) rotate(720deg);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page5>nav>section>article>p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin: 40px 30px;
+    transform: translate(-500px,350px) rotate(720deg);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 1s;
+}
+.page5>nav>section>article>a{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: transparent;
+    color: transparent;
+    text-decoration: none;
+    margin: auto;
+    display: inline-block;
+    transform: scale(0) rotate(720deg);
+    transition-property: transform, color, background-color;
+    transition-duration: .5s;
+    transition-delay: 1s;
+}
+.page5>nav>section:hover>article{
+    transform: translate(0);
+}
+.page5>nav>section:hover>article>h4{
+    transform: scale(1) rotate(0);
+}
+.page5>nav>section:hover>article>p{
+    transform: translate(0);
+}
+.page5>nav>section:hover>article>a{
+    transform: scale(1) rotate(0);
+    color: white;
+    background-color: black;
+}
+.page6>nav{
+    padding: 100px 0;
+    margin: auto;
+    width: fit-content;
+    overflow: hidden;
+}
+.page6>nav>section{
+    position: relative;
+    margin: 0 11px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.page6>nav>section>article{
+    position: absolute;
+    background-color: darkred;
+    top: 0;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+    overflow: hidden;
+}
+.page6>nav>section>footer{
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    transition-property: background-color;
+    transition-duration: .5s;
+    transition-delay: 0s;
+    overflow: hidden;
+}
+.page6>nav>section>img{
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+.page6>nav>section>article>h4{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page6>nav>section>article>p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin: 40px 30px;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page6>nav>section>article>a{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: transparent;
+    color: transparent;
+    text-decoration: none;
+    margin: auto;
+    display: inline-block;
+    transform: rotate(720deg);
+    transition-property: transform, color, background-color;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.page6>nav>section:hover>img{
+    transform: scale(1.5);
+}
+.page6>nav>section:hover>footer{
+    background-color: rgba(255, 255, 255, .6);
+}
+.page6>nav>section:hover>article{
+    transform: scale(1);
+}
+.page6>nav>section:hover>article>h4{
+    transform: scale(1);
+}
+.page6>nav>section:hover>article>p{
+    transform: scale(1);
+}
+.page6>nav>section:hover>article>a{
+    transform: rotate(0);
+    color: white;
+    background-color: black;
 }
