@@ -10,34 +10,42 @@ nav{
 nav>ul>li{
     list-style: none;
     display: inline-block;
+    vertical-align: top;
 }
-nav>ul>li>div{
-    background-color: transparent;
-    text-align: center;
-    padding: 20px 10px;
-    display: inline-block;
-    transition: all .3s linear;
-}
-nav>ul>li>div:hover{
+nav>ul>li>a:hover{
     background-color: #424242;
 }
-nav>ul>li>div>a{
+nav>ul>li>a{
+    display: inline-block;
+    position: relative;
     text-decoration: none;
     color: white;
     border: solid transparent;
     font-size: 25px;
-    padding: 5px 10px;
+    padding: 15px 20px;
     transition: all .3s linear;
 }
-nav>ul>li>div:hover>a{
-    border: solid 2px white;
+ul>li>a>div{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    bottom: 8px;
+    right: 8px;
+    border:solid 2px #ffffff;
+    transition: all .4s linear;
+    transform: scale(1.2);
+    opacity: 0;
+}
+nav>ul>li>a:hover div{
+    transform: scale(1);
+    opacity: 1;    
 }
 .active{
-    border: solid 2px white;
     background-color: #424242;
 }
-.fondo{
-    background-color: #424242;
+.active>div{
+    transform: scale(1);
+    opacity: 1;  
 }
 body{
     background-color: black;
