@@ -128,6 +128,7 @@ h2{
     margin: auto;
     width: 500px;
     height: 350px;
+    text-align: center;
     transform: rotate(90deg) translateX(425px) translateY(-425px);
     transition-property: transform;
     transition-duration: .5s;
@@ -169,7 +170,7 @@ h2{
     transition-delay: .5s;
 }
 .page2>nav>section:hover>article{
-    transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0);
 }
 .page2>nav>section:hover>article>h4{
     transform: translate(0,0);
@@ -183,17 +184,13 @@ h2{
     background-color: black;
 }
 .page3>nav{
-    position: absolute;
-    top: 100px;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    padding: 100px 0;
     margin: auto;
-    width: 1060px;
-    height: 350px;
+    width: fit-content;
     overflow: hidden;
 }
 .page3>nav>section{
+    position: relative;
     margin: 0 11px;
     width: 500px;
     height: 350px;
@@ -202,13 +199,13 @@ h2{
     overflow: hidden;
 }
 .page3>nav>section>article{
+    position: absolute;
     background-color: rgba(180, 4, 4, .3);
     top: 0;
     margin: auto;
-    position: absolute;
     width: 500px;
     height: 350px;
-    transform: translateY(-425px) translateX(70px) rotate(90deg);
+    transform: rotate(90deg) translateY(-75px) translateX(-425px);
     transition-property: transform;
     transition-duration: .5s;
     transition-delay: 0s;
